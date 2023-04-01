@@ -1,13 +1,9 @@
 #!/bin/bash
-# Does the equivalent of sysprep for linux boxes to prepare them for cloning.
-# Based on https://lonesysadmin.net/2013/03/26/preparing-linux-template-vms/
-# For issues or updated versions of this script, browse to the following URL:
-# https://gist.github.com/AfroThundr3007730/ff5229c5b1f9a018091b14ceac95aa55
 
-AUTHOR='AfroThundr'
+AUTHOR='fcardoso'
 BASENAME="${0##*/}"
-MODIFIED='20211002'
-VERSION='1.8.1'
+MODIFIED='20230401'
+VERSION='0.0.1'
 
 parse_args() {
     [[ -n $1 ]] || {
