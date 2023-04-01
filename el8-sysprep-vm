@@ -84,7 +84,7 @@ firstboot() {
     [[ $(hostname) == CHANGEME ]] && {
         say 'Regenerating hostname and rebooting...'
         /bin/hostnamectl set-hostname \
-            "LINUX-$(tr -cd '[:upper:][:digit:]' < /dev/urandom | head -c 9)"
+            "linux-$(tr -cd '[:lower:][:digit:]' < /dev/urandom | head -c 9)"
         /bin/systemctl reboot
     }
 
